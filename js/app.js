@@ -177,7 +177,7 @@ var addboxListener = function () {
         // End Game if match all boxes
         if (totalbox === match) {
             setRating(Clicks);
-            var score = setRating(Clicks).score;
+            let score = setRating(Clicks).score;
             setTimeout(function () {
                 endGame(Clicks, score);
             }, 500);

@@ -134,14 +134,6 @@ h1 {
 }
 
 /* Media queries */
-@media only screen and (max-width: 800px) {
-    #win-message-section #leader-board {
-        position: static;
-        top: 0;
-        left: 0;
-        margin-bottom: 20px;
-    }
-}
 @media only screen and (max-width: 390px) {
     header h1 {
         font-size: 1.2em;
