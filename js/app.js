@@ -203,5 +203,5 @@ function resetseconds(seconds) {
         clearInterval(seconds);
     }
 }
-
+// init Game
 initGame();
