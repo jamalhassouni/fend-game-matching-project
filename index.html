@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta charset-->
+    <meta charset="utf-8">
+    <!-- title-->
+    <title>Matching Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Udacity (Front-End Web Developer Nanodegree Project): Memory Game.">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- font family -->
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <!-- sweetalert css CDN -->
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/sweetalert2/3.0.3/sweetalert2.min.css'>
+    <!-- animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- main stylesheet file -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- resposive file  -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Start container-->
+    <div class="container">
+        <!-- Start header-->
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+        <!-- End header-->
+        <!-- Start Score section-->
+        <section class="score-panel">
+            <!-- Start stars -->
+            <ul class="stars">
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+            </ul>
+            <!-- End stars -->
+            <!-- Start moves -->
+            <span class="moves">0</span> Moves
+            <!-- End moves -->
+            <div class="float-right">
+                <!-- Start timer -->
+                <div id="timer-show" class="float-left">
+                    <span id="time-info">0</span> s
+                </div>
+                <!-- End timer -->
+                <!-- Start repeat button -->
+                <div class="restart float-right icon-restart">
+                    <i class="fa fa-repeat"></i>
+                </div>
+                <!-- End repeat button -->
+            </div>
+        </section>
+        <!-- End Score section-->
+        <!-- start box game  -->
+        <ul class="deck" id="deckBox">
+        </ul>
+        <!-- End box game -->
+    </div>
+    <!-- End container-->
+    <!-- jquery js CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- sweetalert js CDN -->
+    <script src='https://cdn.jsdelivr.net/sweetalert2/3.0.3/sweetalert2.min.js'></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
