@@ -53,7 +53,7 @@ function initGame() {
     clearBox("deckBox");
     match = 0;
     Clicks = 0;
-    $moveNum.textContent = "0";
+    $moveNum.html(Clicks);
     $ratingStars.removeClass('fa-thumbs-down').addClass('fa-star');
     for (let box of boxes) {
         $deckBox.append($('<li class="card"><i class="fa fa-' + box + '"></i></li>'));
@@ -185,6 +185,7 @@ var addboxListener = function () {
             let score = setRating(Clicks).score;
             setTimeout(function () {
                 endGame(Clicks, score);
+
             }, 500);
         }
     });
