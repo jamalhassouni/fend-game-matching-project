@@ -17,7 +17,8 @@ let symbols = ['diamond', 'diamond', 'paper-plane-o', 'paper-plane-o', 'anchor',
     totalbox = symbols.length / 2,
     rank3stars = 10,
     rank2stars = 16,
-    rank1stars = 20;
+    rank1stars = 20,
+    firstClick = false;
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -63,6 +64,7 @@ function initGame() {
     resetseconds(currentseconds);
     second = 0;
     $seconds.textContent = `${second}`;
+    firstClick = false;
 
 
 }
@@ -110,6 +112,9 @@ function endGame(Clicks, score) {
             initGame();
         }
     });
+    // reset seconds when user win and show timer in background
+    resetseconds(currentseconds);
+    $seconds.textContent = `${second}`;
 }
 
 //  when click play again button run this function
@@ -188,8 +193,6 @@ var addboxListener = function () {
 
 
 // time for game  function .. count seconds from the game start to the end
-let firstClick = false;
-
 function initTime() {
     firstClick = true;
     currentseconds = setInterval(function () {
