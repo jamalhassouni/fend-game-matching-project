@@ -135,7 +135,7 @@ $PlayAgain.addEventListener('click', function () {
 var addboxListener = function () {
 
     // box flip
-    $deckBox.find('.card').bind('click', function () {
+    $deckBox.find('.card').on('click', function () {
 
         // cache $(this) in a variable to improve performance .. don't call it many times just once
         let $this = $(this);
